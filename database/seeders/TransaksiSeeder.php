@@ -20,7 +20,7 @@ class TransaksiSeeder extends Seeder
                 'user_id' => $faker->numberBetween(1, 10),
                 'pengirim' => $faker->name(),
                 'penerima' => $faker->name(),
-                'amount' => $faker->randomFloat(2, 10000, 1000000),
+                'amount' => $faker->randomFloat(2, 10000, 100000),
             ]);
         }
     }

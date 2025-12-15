@@ -27,7 +27,7 @@ class UserFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'balance' => fake()->randomFloat(2, 0, 1000000),
-            'number_akun' => fake()->unique()->numberBetween(100000, 999999),
+            'number_akun' => fake()->unique()->numberBetween(10000, 99999),
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
